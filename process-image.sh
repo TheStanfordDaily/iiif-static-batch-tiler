@@ -13,7 +13,7 @@ ls input | while read x ; do
 python iiif/iiif_static.py -d out/${DIR}/Stanford_Daily-IMG/ -p https://tiles.archives.stanforddaily.com/${DIR}/Stanford_Daily-IMG -t 1024 -i $x input/$x ;
 done
 
-# aws s3 cp out s3://stanforddailyarchive-tiled --recursive
-az storage blob upload-batch -s out -d stanforddailyarchive-tiled
+aws s3 cp out s3://stanforddailyarchive-tiled --recursive
+# az storage blob upload-batch -s out -d stanforddailyarchive-tiled
 
 # az storage blob delete-batch -s stanforddailyarchive-tiled
