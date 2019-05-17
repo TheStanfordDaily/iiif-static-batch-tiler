@@ -9,6 +9,7 @@ COPY setup.sh /tmp/setup.sh
 RUN ["chmod", "+x", "/tmp/process-image.sh"]
 RUN ["chmod", "+x", "/tmp/setup.sh"]
 
+ENV DEBIAN_FRONTEND noninteractive
 
 RUN /tmp/setup.sh
 
