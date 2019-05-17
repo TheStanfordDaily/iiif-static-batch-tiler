@@ -16,6 +16,12 @@ python3 parse_meta.py
 wc -l files.txt | awk '{print $1'} # 18713. So we want 0 - 18712
 ```
 
+Local testing steps
+```
+docker build -t thestanforddaily/archives-batch-tiler .
+./test.sh
+```
+
 Build and push steps:
 ```
 docker build -t thestanforddaily/archives-batch-tiler .

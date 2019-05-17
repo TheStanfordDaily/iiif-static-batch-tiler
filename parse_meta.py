@@ -6,5 +6,4 @@ with open('metadata.json') as file:
             for month in metadata[year]:
                 for day in metadata[year][month]:
                     path = metadata[year][month][day]
-                    path, _ = path.split("/Stanford_Daily")
-                    output.write(path + "/Stanford_Daily-IMG/" + "\n")
+                    output.write(path + "\n")

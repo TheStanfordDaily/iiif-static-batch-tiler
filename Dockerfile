@@ -12,4 +12,4 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN /tmp/setup.sh
 
 
-ENTRYPOINT /tmp/process-image.sh
+# ENTRYPOINT /tmp/process-image.sh
