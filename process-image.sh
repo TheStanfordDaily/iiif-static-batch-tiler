@@ -1,5 +1,5 @@
 #!/bin/sh
-LINE=$((AWS_BATCH_JOB_ARRAY_INDEX + 1))
+LINE=$((AWS_BATCH_JOB_ARRAY_INDEX + ${LINE_START:-1})) # Default value for LINE_START is 1.
 METS_FILE_PATH=$(sed -n ${LINE}p /tmp/files.txt)
 DIR=$(dirname $METS_FILE_PATH)
 cd /tmp
