@@ -1,5 +1,3 @@
-# docker build -t tsd-archives-tiler .
-
 FROM ubuntu:18.04
 
 COPY files.txt /tmp/files.txt
