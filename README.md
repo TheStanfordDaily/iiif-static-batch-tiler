@@ -1,5 +1,5 @@
 # iiif-static-batch-generator
-Generates [IIIF](https://iiif.io/) static tiles from images in an S3 bucket and puts them into Azure storage.
+Generates [IIIF](https://iiif.io/) static tiles from images in an S3 bucket and puts them into another S3 bucket.
 
 ## Setup
 Make sure you create an `.env` file with the following in it:
