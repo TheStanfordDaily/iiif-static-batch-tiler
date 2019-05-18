@@ -1,4 +1,4 @@
-# iiif-static-batch-generator
+# iiif-static-batch-tiler
 Generates [IIIF](https://iiif.io/) static tiles from images in an S3 bucket and puts them into another S3 bucket.
 
 ## Setup
